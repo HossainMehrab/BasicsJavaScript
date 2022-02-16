@@ -1,0 +1,76 @@
+Last login: Thu Sep 23 10:45:38 on console
+mehrabhossain@Mds-MacBook-Pro ~ % ls
+Applications		Documents		EcoUp-Sales		Movies			Pictures		kaskipartners-web	package-lock.json
+Desktop			Downloads		Library			Music			Public			node_modules		yarn.lock
+mehrabhossain@Mds-MacBook-Pro ~ % cd Desktop
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone git@github.com:Dynamik-Oy/dynamik-styles.git
+Cloning into 'dynamik-styles'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone https://github.com/Dynamik-Oy/dynamik-styles.git
+Cloning into 'dynamik-styles'...
+Username for 'https://github.com': tania-dev
+Password for 'https://tania-dev@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Dynamik-Oy/dynamik-styles.git/'
+mehrabhossain@Mds-MacBook-Pro Desktop % clear
+
+
+
+
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone git@github.com-tdvovo:Dynamik-Oy/dynamik-styles.git
+Cloning into 'dynamik-styles'...
+ssh: Could not resolve hostname github.com-tdvovo: nodename nor servname provided, or not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone git@github.com-tdnovo:Dynamik-Oy/dynamik-styles.git
+Cloning into 'dynamik-styles'...
+Enter passphrase for key '/Users/mehrabhossain/.ssh/tdnovo_id_ed25519': 
+remote: Enumerating objects: 79, done.
+remote: Counting objects: 100% (79/79), done.
+remote: Compressing objects: 100% (70/70), done.
+remote: Total 79 (delta 7), reused 75 (delta 7), pack-reused 0
+Receiving objects: 100% (79/79), 506.20 KiB | 552.00 KiB/s, done.
+Resolving deltas: 100% (7/7), done.
+mehrabhossain@Mds-MacBook-Pro Desktop % 
+
+
+
+mehrabhossain@Mds-MacBook-Pro Desktop % ls
+Desktop12.08.2021
+Dynamic
+FS-Training
+Hms
+TE_Service
+Tania Akter (@taniatink) • Instagram photos and videos_files
+dy
+dynamik-styles
+ecoup-sales-front
+me.jpg
+scrnli_20_09_2021_20-07-25.webm
+tani
+mehrabhossain@Mds-MacBook-Pro Desktop % cd dynamik-styles
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % ls
+LICENSE			package-lock.json	tsconfig.json
+README.md		package.json
+babel.config.js		src
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % git checkout
+Your branch is up to date with 'origin/main'.
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % ls
+LICENSE			package-lock.json	tsconfig.json
+README.md		package.json
+babel.config.js		src
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % git pull --all
+Fetching origin
+Enter passphrase for key '/Users/mehrabhossain/.ssh/tdnovo_id_ed25519': 
+Already up to date.
+mehrabhossain@Mds-MacBook-Pro dynamik-styles % 

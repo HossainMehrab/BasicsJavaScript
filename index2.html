@@ -1,0 +1,58 @@
+<!-- Traditional mail ordering forms -->
+<!DOCTYPE
+<html lang="en">
+  <head>
+    <title>Traditional mail ordering form</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Teppo Teacher">
+    <meta name="keyword" content="example, html, history">
+    <!-- Link CSS in Head-->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Put direct CSS in Head-->
+    <style>
+        .home{
+            color: blue; 
+        }
+        #radio{
+            color: blueviolet;
+        }
+
+    </style>
+  </head>
+  <body>
+      <h1>Web Store</h1>
+      <p>Welcome to the state-of-art web shop</p>
+      <form method="POST" action="/order">
+        <label class="firstName"  for="firstName"> First name:</label>
+        <input class="inboxFirstName" type="text" name="firstName" id="firstName">
+        <br>
+        <label for="lastName">Last name:</label>
+        <input type="text" name="lastName" id="lastName">
+        <br>
+        <label for="store">Fetch from store</label>
+        <input type="radio" name="store" id="store">
+        <br>
+        <label class="home" for="home">Home delivery</label>
+        <input id="radio" type="radio" name="home" id="home">
+        <br>
+        <h6>Type the order number(s) of product(s) below:</h6>
+        <br>
+        <!-- Put direct CSS in element-->
+        <input style="color: brown;" type="text" name="product1"><br>
+        <input class="all" type="text" name="product2"><br>
+        <input class="all" type="text" name="product3"><br>
+        <input class="all" type="text" name="product4"><br>
+        <input class="all" type="text" name="product5"><br>
+        <input class="all" type="text" name="product6"><br>
+        <input class="all" type="text" name="product7"><br>
+        <input class="all" type="text" name="product8"><br>
+        <input class="all" type="text" name="product9"><br>
+        <input class="all" type="text" name="product10"><br>
+
+        <input id="sub" type="submit" value="Order now!"><br>
+      </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(8, 10, 34, 0.981);
+  color: coral;
+  font-size: medium;
+  font-variant-numeric: ordinal;
+}
+h1 {
+  font-size: 100px;
+  color: blue;
+}
+form {
+  width: 100px;
+  height: 100px;
+}
+.firstName {
+  color: rgb(169, 44, 44);
+}
+.inboxFirstName {
+  width: 200px;
+  height: 100px;
+  border: solid 2px #ffffff;
+}
+.all {
+  color: blue;
+}
+#sub {
+  color: rgb(100, 0, 13);
+  background: rgb(22, 177, 8);
+}

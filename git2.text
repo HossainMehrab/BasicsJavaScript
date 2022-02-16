@@ -1,0 +1,140 @@
+Last login: Wed Sep 22 17:31:55 on ttys000
+mehrabhossain@Mds-MacBook-Pro ~ % cd .ssh
+mehrabhossain@Mds-MacBook-Pro .ssh % ls
+id_rsa		id_rsa.pub	known_hosts
+mehrabhossain@Mds-MacBook-Pro .ssh % ssh-keygen -f tdnovo_id_ed25519 
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in tdnovo_id_ed25519.
+Your public key has been saved in tdnovo_id_ed25519.pub.
+The key fingerprint is:
+SHA256:JuD1RMG7zNTEtBZOiTWLH03nb/RyG7034rZbV0pX1Ak mehrabhossain@Mds-MacBook-Pro.local
+The key's randomart image is:
++---[RSA 3072]----+
+|       .o**..Eo +|
+|       .o++B o o.|
+|    . . o+* . . o|
+|   . o ooo..   o+|
+|    . .+S..   o.O|
+|       o+    . *=|
+|             ..=o|
+|            ..o +|
+|            .+o  |
++----[SHA256]-----+
+mehrabhossain@Mds-MacBook-Pro .ssh % ls  
+id_rsa			id_rsa.pub		known_hosts		tdnovo_id_ed25519	tdnovo_id_ed25519.pub
+mehrabhossain@Mds-MacBook-Pro .ssh % cat tdnovo_id_ed25519.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCs6f0/BabcLguWBHlsNuwXBjOuWgQENX65xQV+S+eQtVQ0wLOUvTj7N0ZnKVMCN3HjdivYgl72S8u4rOLyFAJ3BejAFdoyQ6aaUfoLGE0o4Xt9/jGEpulBm3tl8RCHEKyAilCiJSbouCyxvoUIpfN5nAlGVrdjb+kM9sNpnZOWUjHyWZdLs2T6AKhFxo5QlGFFQqxhl4L7f4OP7t0ow6P+xIRyvdl646XaxNRTUZni/S55s3HXglg89KoMWKlEaXKPGt1rfLRT0x4uj+4LYy9pcBPHeNtQjHXoufX7n/0DSOsUFTEKTaS5HYUVw7gf1fKx7I8p30pNiNDS5CiolnBGue4CLejxexp9/2kyWpmH8h9x7mTKhdLM4i/uHLN5adyegr/nmMlbnkper6cfH7yciCp+2cfD8UnL2c2sPrv55tWluJSSdpvgGOj96q4PVlXWTT8oO0qoFqs+ZPAdFUzh+WKvjgTelB8L7krTkmLjZWtZbt0r1OxJ/0NW7g8apT8= mehrabhossain@Mds-MacBook-Pro.local
+mehrabhossain@Mds-MacBook-Pro .ssh % touch config
+mehrabhossain@Mds-MacBook-Pro .ssh % ls
+config			id_rsa			id_rsa.pub		known_hosts		tdnovo_id_ed25519	tdnovo_id_ed25519.pub
+mehrabhossain@Mds-MacBook-Pro .ssh % nano config 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mehrabhossain@Mds-MacBook-Pro .ssh % cd
+mehrabhossain@Mds-MacBook-Pro ~ % ls
+Applications		Documents		EcoUp-Sales		Movies			Pictures		kaskipartners-web	package-lock.json
+Desktop			Downloads		Library			Music			Public			node_modules		yarn.lock
+mehrabhossain@Mds-MacBook-Pro ~ % cd Desktop
+mehrabhossain@Mds-MacBook-Pro Desktop % ls
+Desktop12.08.2021						Hms								dy
+Dynamic								TE_Service							scrnli_20_09_2021_20-07-25.webm
+FS-Training							Tania Akter (@taniatink) • Instagram photos and videos_files	tani
+mehrabhossain@Mds-MacBook-Pro Desktop % cd Dynamic
+mehrabhossain@Mds-MacBook-Pro Dynamic % cd dy
+cd: no such file or directory: dy
+mehrabhossain@Mds-MacBook-Pro Dynamic % ls 
+New_Import_10.09.2021	Old_10.09.2021 copy
+mehrabhossain@Mds-MacBook-Pro Dynamic % cd Dynamic
+cd: no such file or directory: Dynamic
+mehrabhossain@Mds-MacBook-Pro Dynamic % git clone git@github.com-tdnovo:Dynamik-Oy/ecoup-sales-front.git
+Cloning into 'ecoup-sales-front'...
+ssh: Could not resolve hostname github.com-tdnovo: nodename nor servname provided, or not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mehrabhossain@Mds-MacBook-Pro Dynamic % cd
+mehrabhossain@Mds-MacBook-Pro ~ % cd .ssh
+mehrabhossain@Mds-MacBook-Pro .ssh % ls
+config			id_rsa			id_rsa.pub		known_hosts		tdnovo_id_ed25519	tdnovo_id_ed25519.pub
+mehrabhossain@Mds-MacBook-Pro .ssh % nano config
+mehrabhossain@Mds-MacBook-Pro .ssh % cd
+mehrabhossain@Mds-MacBook-Pro ~ % ls
+Applications		Documents		EcoUp-Sales		Movies			Pictures		kaskipartners-web	package-lock.json
+Desktop			Downloads		Library			Music			Public			node_modules		yarn.lock
+mehrabhossain@Mds-MacBook-Pro ~ % cd Desktop
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone git@github.com-tdnovo:Dynamik-Oy/ecoup-sales-front.git
+Cloning into 'ecoup-sales-front'...
+Enter passphrase for key '/Users/mehrabhossain/.ssh/tdnovo_id_ed25519': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mehrabhossain@Mds-MacBook-Pro Desktop % git clone git@github.com-tdnovo:Dynamik-Oy/ecoup-sales-front.git
+Cloning into 'ecoup-sales-front'...
+Enter passphrase for key '/Users/mehrabhossain/.ssh/tdnovo_id_ed25519': 
+remote: Enumerating objects: 1065, done.
+remote: Counting objects: 100% (1065/1065), done.
+remote: Compressing objects: 100% (715/715), done.
+remote: Total 1065 (delta 661), reused 723 (delta 321), pack-reused 0
+Receiving objects: 100% (1065/1065), 958.72 KiB | 1.43 MiB/s, done.
+Resolving deltas: 100% (661/661), done.
+mehrabhossain@Mds-MacBook-Pro Desktop % cd
+mehrabhossain@Mds-MacBook-Pro ~ % cd                                                              
+mehrabhossain@Mds-MacBook-Pro ~ % ls 
+Applications		Documents		EcoUp-Sales		Movies			Pictures		kaskipartners-web	package-lock.json
+Desktop			Downloads		Library			Music			Public			node_modules		yarn.lock
+mehrabhossain@Mds-MacBook-Pro ~ % cd Desktop
+mehrabhossain@Mds-MacBook-Pro Desktop % ls
+Desktop12.08.2021						TE_Service							scrnli_20_09_2021_20-07-25.webm
+Dynamic								Tania Akter (@taniatink) • Instagram photos and videos_files	tani
+FS-Training							dy
+Hms								ecoup-sales-front
+mehrabhossain@Mds-MacBook-Pro Desktop % cd e
+cd: no such file or directory: e
+mehrabhossain@Mds-MacBook-Pro Desktop % cd  
+mehrabhossain@Mds-MacBook-Pro ~ % cd ecoup-sales-front
+cd: no such file or directory: ecoup-sales-front
+mehrabhossain@Mds-MacBook-Pro ~ % cd 
+mehrabhossain@Mds-MacBook-Pro ~ % cd Desktop
+mehrabhossain@Mds-MacBook-Pro Desktop % ld
+ld: warning: platform not specified
+ld: warning: -arch not specified
+ld: warning: No platform min-version specified on command line
+ld: no object files specified
+mehrabhossain@Mds-MacBook-Pro Desktop % ls
+Desktop12.08.2021						TE_Service							scrnli_20_09_2021_20-07-25.webm
+Dynamic								Tania Akter (@taniatink) • Instagram photos and videos_files	tani
+FS-Training							dy
+Hms								ecoup-sales-front
+mehrabhossain@Mds-MacBook-Pro Desktop % cd ecoup-sales-front
+mehrabhossain@Mds-MacBook-Pro ecoup-sales-front % git checkout
+Your branch is up to date with 'origin/main'.
+mehrabhossain@Mds-MacBook-Pro ecoup-sales-front % git checkout develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+Switched to a new branch 'develop'
+mehrabhossain@Mds-MacBook-Pro ecoup-sales-front % ls
+README.md		package-lock.json	package.json		public			src			yarn.lock
+mehrabhossain@Mds-MacBook-Pro ecoup-sales-front % git pull --all
+Fetching origin
+Enter passphrase for key '/Users/mehrabhossain/.ssh/tdnovo_id_ed25519': 
+Already up to date.
+mehrabhossain@Mds-MacBook-Pro ecoup-sales-front %       
